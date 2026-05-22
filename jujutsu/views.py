@@ -7,8 +7,8 @@ from .serializers import PersonajeSerializer
 # 1. Configuración de la paginación con los parámetros exactos de la rúbrica
 class ParcialPagination(PageNumberPagination):
     page_size = 3  # Tamaño por defecto si no se pasa el parámetro
-    page_query_param = 'page'  # Parámetro para la página (ej: ?page=1)
-    page_size_query_param = 'page_size'  # <--- CORREGIDO: Ahora acepta ?page_size=3
+    page_query_param = 'page'  
+    page_size_query_param = 'page_size'  
     max_page_size = 100
 
 # 2. Configuración de los filtros avanzados
